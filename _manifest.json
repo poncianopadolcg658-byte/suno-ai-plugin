@@ -1,0 +1,34 @@
+{
+  "manifest_version": 1,
+  "name": "suno_ai",
+  "description": "使用Suno AI生成AI歌曲",
+  "version": "1.0.0",
+  "author": "MaiBot",
+  "configs": [
+    {
+      "key": "api.api_base",
+      "name": "API基础地址",
+      "type": "text",
+      "default": "https://studio-api.suno.ai",
+      "required": false,
+      "description": "Suno AI API的基础地址"
+    },
+    {
+      "key": "accounts.default_account",
+      "name": "默认账户名称",
+      "type": "text",
+      "default": "default",
+      "required": false,
+      "description": "默认使用的Suno AI账户名称"
+    },
+    {
+      "key": "accounts.accounts_list",
+      "name": "账户列表",
+      "type": "text",
+      "default": "default:",
+      "required": true,
+      "description": "账户列表，格式为：账户名:Cookie|账户名2:Cookie2"
+    }
+  ],
+  "id": "MaiBot.suno_ai"
+}
